@@ -90,7 +90,12 @@ export function activate(context: vscode.ExtensionContext) {
         }
         insertTitle(textEditor, edit, Math.max(1, setLevel -1));
     })
-    context.subscriptions.push(getPrevTitleDisposable);
+	context.subscriptions.push(getPrevTitleDisposable);
+	// &emsp;
+	let InsertTabDisposable =  vscode.commands.registerTextEditorCommand("cqh-markdown-enhance.insert_black", (textEditor, edit) => {
+        edit.insert(textEditor.selection.active, "&emsp;");
+    })
+	context.subscriptions.push(InsertTabDisposable);
 }
 
 // this method is called when your extension is deactivated
