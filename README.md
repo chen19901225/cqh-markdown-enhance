@@ -10,6 +10,15 @@ convert `## [something](#id)` to `<h2 id="id">something</h2>`
 
 convert `text` to `<strong>text</strong>`
 
+### insert current Title 
+alt + [
+
+### insert prev title
+alt + -
+
+### insert next title
+alt + =
+
 ## requirement
 activated: languageId == markdown or command
 
