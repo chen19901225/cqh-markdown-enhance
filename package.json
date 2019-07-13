@@ -1,24 +1,24 @@
 {
-	"name": "cqh-markdown-enhance",
-	"displayName": "cqh-markdown-enhance",
-	"description": "",
-	"publisher": "cqh",
-	"version": "0.0.7",
-	"engines": {
-		"vscode": "^1.36.0"
-	},
-	"repository": {
+    "name": "cqh-markdown-enhance",
+    "displayName": "cqh-markdown-enhance",
+    "description": "",
+    "publisher": "cqh",
+    "version": "0.1.0",
+    "engines": {
+        "vscode": "^1.36.0"
+    },
+    "repository": {
         "url": "https://github.com/chen19901225/cqh-markdown-enhance"
     },
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onLanguage:markdown"
-	],
-	"main": "./out/extension.js",
-	"contributes": {
-		"keybindings": [
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onLanguage:markdown"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "keybindings": [
             {
                 "command": "cqh-markdown-enhance.get_current_title",
                 "key": "alt+[",
@@ -57,23 +57,23 @@
                 "title": "cqh markdown enhance get prev title"
             }
         ]
-	},
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"pretest": "npm run compile",
-		"test": "node ./out/test/runTest.js"
-	},
-	"devDependencies": {
-		"@types/glob": "^7.1.1",
-		"@types/mocha": "^5.2.6",
-		"@types/node": "^10.12.21",
-		"@types/vscode": "^1.36.0",
-		"glob": "^7.1.4",
-		"mocha": "^6.1.4",
-		"typescript": "^3.3.1",
-		"tslint": "^5.12.1",
-		"vscode-test": "^1.0.0-next.0"
-	}
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile",
+        "test": "node ./out/test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/glob": "^7.1.1",
+        "@types/mocha": "^5.2.6",
+        "@types/node": "^10.12.21",
+        "@types/vscode": "^1.36.0",
+        "glob": "^7.1.4",
+        "mocha": "^6.1.4",
+        "typescript": "^3.3.1",
+        "tslint": "^5.12.1",
+        "vscode-test": "^1.0.0-next.0"
+    }
 }
