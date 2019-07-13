@@ -3,7 +3,7 @@
     "displayName": "cqh-markdown-enhance",
     "description": "",
     "publisher": "cqh",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "engines": {
         "vscode": "^1.36.0"
     },
@@ -33,12 +33,12 @@
                 "command": "cqh-markdown-enhance.get_next_title",
                 "key": "alt+=",
                 "when": "editorTextFocus && !editorHasSelection && editorLangId==markdown "
-			},
-			{
-				"command": "cqh-markdown-enhance.insert_black",
-				"key": "alt+]",
-				"when": "editorTextFocus && !editorHasSelection && editorLangId==markdown "
-			}
+            },
+            {
+                "command": "cqh-markdown-enhance.insert_black",
+                "key": "alt+]",
+                "when": "editorTextFocus && !editorHasSelection && editorLangId==markdown "
+            }
         ],
         "commands": [
             {
@@ -60,11 +60,11 @@
             {
                 "command": "cqh-markdown-enhance.get_prev_title",
                 "title": "cqh markdown enhance get prev title"
-			},
-			{
-				"command": "cqh-markdown-enhance.insert_black",
-				"title": "cqh markdown enhance insert 8 whitespace"
-			}
+            },
+            {
+                "command": "cqh-markdown-enhance.insert_black",
+                "title": "cqh markdown enhance insert 8 whitespace"
+            }
         ]
     },
     "scripts": {
