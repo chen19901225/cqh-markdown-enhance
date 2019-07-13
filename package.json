@@ -2,6 +2,7 @@
 	"name": "cqh-markdown-enhance",
 	"displayName": "cqh-markdown-enhance",
 	"description": "",
+	"publisher": "cqh",
 	"version": "0.0.7",
 	"engines": {
 		"vscode": "^1.36.0"
