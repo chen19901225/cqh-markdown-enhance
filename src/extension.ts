@@ -32,9 +32,10 @@ export function activate(context: vscode.ExtensionContext) {
         const selectedText = textEditor.document.getText(range);
         console.log(`[cqh-markdown-enhance], selectedText:${selectedText}`);
         const convertLine = convertAnchorHtml(selectedText);
+        let newEndPosition = new vscode.Position(range.start.line, range.start.character + convertLine.length);
         edit.replace(range, convertLine);
         let end = range.end;
-        textEditor.selection = new vscode.Selection(end, end);
+        textEditor.selection = new vscode.Selection(newEndPosition, newEndPosition);
 
 
         // Display a message box to the user
