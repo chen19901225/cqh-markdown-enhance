@@ -35,7 +35,9 @@ export function activate(context: vscode.ExtensionContext) {
         let newEndPosition = new vscode.Position(range.start.line, range.start.character + convertLine.length);
         
         textEditor.edit(builder => {
-            builder.replace(range, convertLine);
+            builder.replace(range, convertLine)
+            textEditor.selection = new vscode.Selection(newEndPosition, newEndPosition);
+            
         });
         // edit.replace(range, convertLine);
         // textEditor.selection = new vscode.Selection(newEndPosition, newEndPosition);
